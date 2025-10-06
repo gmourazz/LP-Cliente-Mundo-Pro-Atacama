@@ -32,43 +32,55 @@ const FAQ = () => {
   const faqs = [
     { 
       question: "Essa viagem é em excursão?", 
-      answer: "Não, nossa viagem não é em grupo fechado, o que significa que você terá a liberdade de explorar e aproveitar cada momento conforme suas preferências. Nossos roteiros não são aquelas \"caravanas\" em ônibus e com guia que passam correndo pelo ponto turístico e você não tem nem tempo de bater foto. Não se preocupe se você nunca viajou ou se não fala inglês, estaremos auxiliando em tudo." 
+      answer: "Não, nossa viagem não é em grupo fechado, o que significa que você terá a liberdade de explorar e aproveitar cada momento conforme suas preferências. Durante os passeios, você estará acompanhado por um guia especializado que irá fornecer informações e orientações, garantindo uma experiência enriquecedora. Além disso, você terá a oportunidade de interagir e conhecer outras pessoas que também estão participando dos passeios." 
     },
     { 
-      question: "Como será o suporte da agência durante a viagem?", 
-      answer: "Aqui na Mundo Pró, você não receberá um \"Boa viagem e tchau\". Estaremos com você durante toda a viagem, auxiliando em tudo o que for necessário. Somos chatos igual mãe, gostamos de perguntar se você já chegou e adoramos receber fotos nas pirâmides, tomando aquela cerveja no resort no Caribe, subindo na Torre Eiffel ou em qualquer outro lugar que você achar diferentão. Para acompanhá-lo em sua viagem, criamos grupos no WhatsApp com o atendente e uma pessoa de suporte. Assim, terá auxílio durante toda a sua jornada." 
+      question: "Os ingressos estão inclusos?", 
+      answer: "Dos passeios inclusos no pacote, apenas Lagunas Escondidas de Baltinache (10.000 pesos chilenos por pessoa) NÃO ESTÁ INCLUSO NO PACOTE. O ingresso deverá ser pago EM ESPÉCIE no dia do passeio. Os ingressos de Piedras Rojas/Lagunas Altiplânicas estão inclusos no pacote." 
     },
     { 
-      question: "Posso mudar a ordem das cidades ou incluir/excluir cidades?", 
-      answer: "Sim. O pacotes que enviamos é apenas uma sugestão otimizada, mas podemos ajustar conforme o seu interesse. Se quiser incluir ou excluir cidades, adaptamos o planejamento e refazemos a simulação de valores para você." 
+      question: "Que dinheiro devo levar?", 
+      answer: "Você pode levar dólar para trocar por pesos chilenos nas casas de câmbio de San Pedro de Atacama. Cartões de crédito também são muito bem aceitos em restaurantes e mercados." 
     },
     { 
-      question: "Posso escolher outra data ou outros hotéis?", 
-      answer: "Claro. Nós sugerimos estes hotéis, mas podemos listar outras opções para que escolham.\n\nA data que está no PDF é apenas uma sugestão. Podemos simular em outro período se quiser. Mas claro, pode ter alteração no valor." 
+      question: "Os transportes até pontos turísticos estão inclusos?", 
+      answer: "Sim, todos os passeios descritos incluem transporte desde o hotel." 
     },
     { 
-      question: "Como será feito meu roteiro personalizado e quais as dicas que a agência dará?", 
-      answer: "Nós preparamos um roteiro dia a dia com ingressos, mapas, sugestões de passeios, restaurantes e TODAS as dicas que vai precisar. Você sai do Brasil com TODOS os passos organizados.\n\nA gente vai te dar dicas sobre transporte público, compra de chip de internet, cartões de crédito e até mesmo sobre imigração. Nós vamos cuidar de todos os detalhes da sua viagem." 
+      question: "O pacote inclui transfer do aeroporto ao hotel?", 
+      answer: "Sim, os voos chegam em Calama. De Calama até San Pedro são 100 km. O transfer de chegada e saída está incluso." 
     },
     { 
-      question: "Posso incluir transfer do aeroporto ao hotel?", 
-      answer: "Sim, podemos incluir transfers privativos ou compartilhados, de acordo com sua preferência e orçamento. Se preferir, também damos orientações detalhadas de como chegar de transporte público." 
+      question: "Há alguma restrição de idade para participar das atividades no Deserto do Atacama?", 
+      answer: "Em geral, não há restrição de idade específica para participar das atividades no Deserto do Atacama. No entanto, algumas atividades podem exigir um nível mínimo de condicionamento físico e mobilidade, principalmente as que envolvem caminhadas ou esforço físico mais intenso." 
     },
     { 
       question: "Qual o gasto médio com alimentação?", 
-      answer: "Perfil Econômico:\nAlimentação: Entre 20 a 40 euros por dia.\nFast food, comida em mercado, restaurantes simples.\nTransporte Público: Cerca de 10 euros por dia.\n\nPerfil Médio:\nAlimentação: Entre 50 a 100 euros por dia.\nRestaurantes bem avaliados com pratos com valor médio de 15 euros.\nTransporte: Cerca de 20 a 40 euros por dia. Uber/Taxi são as opções de transporte.\n\nPerfil de Luxo:\nAlimentação: Acima de 150 euros por dia.\nRestaurantes premiados com pratos especiais.\nTransporte: Depende mais de opções privativas, podendo variar de 50 a 100 euros por dia." 
+      answer: "Em geral, considerando refeições em restaurantes simples, é possível estimar um gasto médio de cerca de 7.000 a 20.000 pesos chilenos por pessoa por refeição. Esse valor pode ser maior em restaurantes mais sofisticados ou com opções gourmet." 
+    },
+    { 
+      question: "Como funciona o suporte da agência durante a viagem?", 
+      answer: "Viajar com a Mundo Pró é certeza de satisfação. Aqui você tem suporte 24h durante a viagem. Estaremos à disposição para tornar sua viagem perfeita." 
+    },
+    { 
+      question: "É possível personalizar o itinerário do pacote de acordo com as preferências do cliente?", 
+      answer: "Sim, podemos aumentar ou diminuir noites no Atacama. Também é possível incluir Santiago na viagem, visitando a cidade por alguns dias antes ou depois do Atacama.\n\nTambém é possível incluir outros passeios no pacote. Tour Astronômico e Geysers El Tatio são dois passeios muito famosos na região." 
+    },
+    { 
+      question: "Quais são os documentos necessários para viajar para o Atacama?", 
+      answer: "Passaporte válido ou RG com menos de 10 anos de emissão. Cartão de entrada e saída (Tarjeta de Entrada y Salida): Ao chegar no aeroporto, você receberá um cartão de entrada e saída, que é um documento migratório. Preencha-o corretamente e mantenha-o em um local seguro, pois será necessário apresentá-lo ao deixar o país." 
+    },
+    { 
+      question: "Qual é a melhor época do ano para visitar o Atacama?", 
+      answer: "De Março a Novembro. Nesse período, as temperaturas são mais amenas e a quantidade de chuvas é menor, proporcionando condições ideais para explorar as belezas do deserto. Durante o verão, especialmente nos meses de dezembro a março, o Atacama pode ser bastante quente, com temperaturas acima dos 30°C." 
     },
     { 
       question: "Quais são os métodos de pagamento aceitos para o pacote de viagem?", 
-      answer: "Isso vai depender da companhia aérea escolhida. Algumas parcelam no cartão em 5 ou 6x e outras em 10x. Temos também opção de parcelamento no boleto. Consulte-nos." 
+      answer: "10x sem juros no cartão de crédito." 
     },
     { 
       question: "Mas moro longe da agência, como vou fazer o pagamento?", 
       answer: "Não se preocupe. Nosso atendimento é 100% online e seguro." 
-    },
-    { 
-      question: "O que não está incluso no pacote?", 
-      answer: "Serviços que não estejam listados no roteiro.\nTransfers\nRefeições (almoço e jantar) e gastos pessoais, como compras ou transporte fora do roteiro.\nGuias locais particulares — nossos roteiros são pensados para que você consiga aproveitar de forma independente, com todas as instruções em português e suporte da agência pelo WhatsApp. Caso deseje guias em algum destino, podemos cotar à parte.\nTaxas locais cobradas diretamente nos hotéis (city tax)." 
     },
   ];
 

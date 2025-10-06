@@ -6,10 +6,9 @@ export default function ImpactSection() {
   const controls = useAnimation();
   const prefersReducedMotion = useReducedMotion();
 
-  // troque aqui o caminho da imagem MOBILE
-  const MOBILE_IMG = '/img/impact-mobile.jpg'; // <-- coloque sua imagem mobile
+  // imagem mobile
+  const MOBILE_IMG = '/img/taolegalatacamamobile.png';
 
-  // animação de entrada do BG
   const onEnter = () => {
     if (prefersReducedMotion) {
       controls.set({ opacity: 1, y: 0 });
@@ -23,7 +22,7 @@ export default function ImpactSection() {
   };
 
   return (
-    <section className="relative w-full h-[520px] md:h-[900px] overflow-hidden bg-black">
+    <section className="relative w-full h-[520px] md:h-[900px] overflow-hidden bg-transparent">
       {/* BG DESKTOP (imagem atual) */}
       <motion.div
         className="absolute inset-0 z-0 hidden md:block"
@@ -43,7 +42,7 @@ export default function ImpactSection() {
         />
       </motion.div>
 
-      {/* BG MOBILE (nova imagem) */}
+      {/* BG MOBILE (preenche a área, sem bordas) */}
       <motion.div
         className="absolute inset-0 z-0 md:hidden"
         initial={{ opacity: 0, y: -120 }}
@@ -54,16 +53,20 @@ export default function ImpactSection() {
         aria-hidden="true"
       >
         <img
-          src= "/img/taolegalatacamamobile.png"         /* nova imagem SOMENTE MOBILE */
-          alt=""
-          className="w-full h-full object-cover"
+          src={MOBILE_IMG}
+          alt="tao legal mobile"
+          className="
+            w-full h-full
+            object-cover object-center
+            scale-[1.08]    /* ajuste fino do zoom; altere se quiser */
+            will-change-transform select-none
+          "
           loading="lazy"
           decoding="async"
         />
       </motion.div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
+      {/* (Overlay removido) */}
 
       {/* Conteúdo */}
       <div className="relative z-30 h-full flex items-center">
@@ -76,10 +79,10 @@ export default function ImpactSection() {
             "
             style={{
               fontFamily: '"Work Sans", sans-serif',
-              fontSize: 'clamp(22px, 4.2vw, 48px)', // um pouco menor + compacto
+              fontSize: 'clamp(22px, 4.2vw, 48px)',
             }}
           >
-            {/* Coloque seu título aqui se quiser */}
+            {/* Título opcional */}
           </h2>
 
           <p
@@ -92,10 +95,10 @@ export default function ImpactSection() {
             "
             style={{
               fontFamily: '"Roboto Mono", monospace',
-              fontSize: 'clamp(12px, 1.8vw, 15px)', // menor e mais compacto
+              fontSize: 'clamp(12px, 1.8vw, 15px)',
             }}
           >
-            {/* Coloque seu texto aqui (mais compacto) */}
+            {/* Texto opcional */}
           </p>
         </div>
       </div>

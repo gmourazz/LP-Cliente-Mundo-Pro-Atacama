@@ -6,12 +6,8 @@ const Footer = () => {
     "Olá! Estou navegando na página da viagem para o Atacama e gostaria de tirar uma dúvida!";
 
   return (
-    <footer
-      id="sobre"
-      className="py-16 relative"
-      style={{ backgroundColor: "#000000" }}
-    >
-      <div className="container">
+    <footer style={{ backgroundColor: "#000000" }}>
+      <div className="max-w-7xl mx-auto px-4 py-12">
         {/* ============ MOBILE ============ */}
         <div className="md:hidden">
           <img
@@ -98,7 +94,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="mb14">
+          <div className="mb-14">
             <a
               href={`https://api.whatsapp.com/send?phone=5554991831562&text=${encodeURIComponent(
                 whatsappMessage

@@ -309,7 +309,7 @@ const Benefits = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.45 }}
-            className="mb-8 -mt-12 md:mt-0"
+            className="mb-12 -mt-6 md:mt-0"
           >
             <div
               className="flex items-center justify-center gap-3 px-5"
